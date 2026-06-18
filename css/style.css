@@ -345,6 +345,13 @@ h1, h2, h3 { font-family: var(--font-title); }
 .avis-text { font-size: 15px; color: rgba(255,255,255,0.82); line-height: 1.75; margin-bottom: 30px; position: relative; z-index: 1; }
 .avis-author { display: flex; align-items: center; gap: 14px; }
 .avis-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--red); }
+.avis-avatar-placeholder {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--red); border: 2px solid var(--red);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white); font-weight: 700; font-size: 18px;
+  flex-shrink: 0;
+}
 .avis-name { font-weight: 600; color: var(--white); font-size: 14px; }
 .avis-sub { font-size: 12px; color: rgba(255,255,255,0.45); }
 .avis-arrows { display: flex; gap: 12px; margin-top: 40px; justify-content: center; }
@@ -359,12 +366,14 @@ h1, h2, h3 { font-family: var(--font-title); }
 .guide-btns { display: flex; gap: 16px; flex-wrap: wrap; }
 .guide-right { display: flex; align-items: center; justify-content: center; }
 .book-mockup {
-  width: 220px; height: 300px;
-  transform: rotate(-8deg);
-  filter: drop-shadow(-16px 20px 40px rgba(192,57,43,0.45));
+  width: 280px; height: 360px;
+  transform: rotate(-6deg);
+  filter: drop-shadow(-20px 24px 48px rgba(192,57,43,0.5));
   transition: var(--transition);
+  border-radius: 4px 12px 12px 4px;
+  overflow: hidden;
 }
-.book-mockup:hover { transform: rotate(-4deg) translateY(-8px); }
+.book-mockup:hover { transform: rotate(-2deg) translateY(-10px); }
 .book-cover {
   width: 100%; height: 100%;
   background: linear-gradient(135deg, #1a0a08 0%, #3d0f0f 45%, #c0392b 100%);
